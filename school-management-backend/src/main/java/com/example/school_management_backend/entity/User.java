@@ -29,4 +29,13 @@ public class User {
     @Enumerated(EnumType.STRING) // Enum değerini string olarak sakla (ADMIN, OGRENCI gibi)
     @Column(nullable = false)
     private Role role;
+
+
+    // Eğer öğrenciye özel başka alanlar varsa örneğin sınıf, bölümü vs:
+    private String classroom;
+    private String schoolNumber;
+
+    public boolean isEnabled() {
+        return false;
+    }
 }
