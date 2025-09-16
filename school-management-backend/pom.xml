@@ -71,8 +71,10 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<version>1.18.30</version> <!-- versiyon sende farklı olabilir -->
+			<scope>provided</scope>
 		</dependency>
+
 
 		<!-- Swagger / API dökümantasyon isteğe bağlı -->
 		<dependency>
